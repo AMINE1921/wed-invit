@@ -1,0 +1,73 @@
+.menu-card {
+  --_rose: #A4545B;
+  --_terracotta: #C17A5E;
+  --_rose-glow: rgba(164, 84, 91, 0.3);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 1.2rem 0.9rem 1.3rem;
+  background: var(--color-white);
+  border: 1.5px solid var(--color-cream);
+  border-radius: var(--radius-md);
+  width: 100%;
+  text-align: center;
+  transition: border-color var(--duration-base) var(--ease-luxury),
+              box-shadow var(--duration-base) var(--ease-luxury);
+
+  &:hover {
+    border-color: var(--_terracotta);
+  }
+
+  /* ── Selected state — animated rose / terracotta border ── */
+  &--selected {
+    border-color: var(--_rose);
+    box-shadow:
+      0 0 0 1.5px var(--_rose),
+      0 0 24px -4px var(--_rose-glow);
+
+    .menu-card__title {
+      color: var(--_rose);
+    }
+  }
+
+  /* ── Inner elements ── */
+  &__icon {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+
+  &__title {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    transition: color var(--duration-fast);
+    line-height: 1.3;
+  }
+
+  &__desc {
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    line-height: 1.45;
+  }
+
+  /* ── Check badge ── */
+  &__check {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--_rose), var(--_terracotta));
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,229 @@
+.rsvp-section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+
+  &__title {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    color: var(--color-text);
+    margin-bottom: var(--space-lg);
+  }
+}
+
+/* ── Attending toggle ── */
+.attending-toggle {
+  margin-bottom: var(--space-md);
+
+  &__label {
+    font-size: 1.15rem;
+    margin-bottom: var(--space-sm);
+    color: var(--color-text);
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+  }
+}
+
+.toggle-btn {
+  padding: 0.8em 2em;
+  border: 1.5px solid var(--color-gold-light);
+  border-radius: var(--radius-md);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  color: var(--color-text);
+  background: var(--color-white);
+  transition: all var(--duration-fast) var(--ease-luxury);
+  min-width: 160px;
+
+  &:hover {
+    border-color: var(--color-gold);
+  }
+
+  &--active {
+    background: var(--color-gold);
+    border-color: var(--color-gold);
+    color: var(--color-white);
+    box-shadow: 0 0 20px var(--color-gold-glow);
+  }
+
+  &--decline.toggle-btn--active {
+    background: var(--color-text-light);
+    border-color: var(--color-text-light);
+    box-shadow: none;
+  }
+}
+
+/* ── Menu section ── */
+.menu-section {
+  padding-top: var(--space-md);
+
+  &__instruction {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-md);
+  }
+}
+
+/* ── Menu category (Plat / Accompagnement / Dessert) ── */
+.menu-category {
+  margin-bottom: var(--space-md);
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  &__badge {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-gold-dark);
+    border: 1px solid var(--color-gold-light);
+    border-radius: 100px;
+    padding: 0.3em 1.2em;
+    background: var(--color-ivory);
+  }
+
+  /* ── Responsive card grid ── */
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+
+    /* 2 columns from 480px */
+    @media (min-width: 480px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 3 columns from 700px */
+    @media (min-width: 700px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* ── Compact variant (sides) ── */
+  &--compact &__cards {
+    @media (min-width: 480px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (min-width: 700px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
+
+/* ── Dietary ── */
+.dietary-field {
+  text-align: left;
+  margin-top: var(--space-sm);
+
+  label {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 0.4em;
+    color: var(--color-text);
+  }
+
+  textarea {
+    width: 100%;
+    padding: 0.8em 1em;
+    border: 1.5px solid var(--color-cream);
+    border-radius: var(--radius-md);
+    background: var(--color-white);
+    color: var(--color-text);
+    resize: vertical;
+    transition: border-color var(--duration-fast);
+
+    &::placeholder {
+      color: var(--color-text-light);
+      font-style: italic;
+    }
+
+    &:focus {
+      border-color: var(--color-gold);
+      outline: none;
+    }
+  }
+}
+
+/* ── Decline ── */
+.decline-message {
+  padding: var(--space-md) 0;
+  font-style: italic;
+  color: var(--color-text-light);
+  line-height: 1.8;
+}
+
+/* ── Submit ── */
+.submit-area {
+  margin-top: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.submit-btn {
+  padding: 1em 3.2em;
+  border: none;
+  border-radius: var(--radius-md);
+  background: var(--color-gold);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: background var(--duration-fast) var(--ease-luxury),
+              box-shadow var(--duration-base) var(--ease-luxury);
+  min-height: 52px;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover:not(:disabled) {
+    background: var(--color-gold-dark);
+    box-shadow: 0 4px 24px var(--color-gold-glow);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* ── Spinner ── */
+  &__spinner {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 2.5px solid rgba(255, 255, 255, 0.3);
+    border-top-color: var(--color-white);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.submit-error {
+  color: var(--color-error);
+  font-size: 0.95rem;
+}

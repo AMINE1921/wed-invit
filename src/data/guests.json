@@ -1,0 +1,32 @@
+[
+    {
+        "code": "test",
+        "name": "Test",
+        "seats": 1
+    },
+    {
+        "code": "lina-sami",
+        "name": "Lina & Sami",
+        "seats": 2
+    },
+    {
+        "code": "famille-dupont",
+        "name": "Famille Dupont",
+        "seats": 4
+    },
+    {
+        "code": "julie-martin",
+        "name": "Julie Martin",
+        "seats": 1
+    },
+    {
+        "code": "pierre-leroy",
+        "name": "Pierre Leroy",
+        "seats": 1
+    },
+    {
+        "code": "les-bernard",
+        "name": "Claire & Thomas Bernard",
+        "seats": 3
+    }
+]

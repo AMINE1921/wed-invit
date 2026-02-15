@@ -1,0 +1,32 @@
+.gold-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  margin: var(--space-lg) auto;
+  transform-origin: center;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(
+      to var(--dir, right),
+      transparent,
+      var(--color-gold-light)
+    );
+  }
+
+  &::before { --dir: right; }
+  &::after  { --dir: left; }
+
+  &__diamond {
+    margin: 0 var(--space-sm);
+    color: var(--color-gold);
+    font-size: 0.55rem;
+    line-height: 1;
+  }
+}
