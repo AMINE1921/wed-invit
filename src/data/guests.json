@@ -1,5 +1,10 @@
 [
     {
+        "code": "test",
+        "name": "Test",
+        "seats": 1
+    },
+    {
         "code": "lina-sami",
         "name": "Lina & Sami",
         "seats": 2

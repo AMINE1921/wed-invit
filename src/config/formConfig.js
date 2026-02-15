@@ -20,7 +20,7 @@ const FORM_CONFIG = {
   /**
    * Web3Forms access key (public — safe to commit).
    */
-  accessKey: '27e9aec7-a8eb-41b7-9321-879b023bf399',
+  accessKey: '4b0b2e19-3a9a-4c80-9a84-7d2549156a8d',
 
   /**
    * The URL to POST the RSVP data to.
