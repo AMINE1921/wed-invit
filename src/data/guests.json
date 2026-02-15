@@ -1,32 +1,87 @@
 [
     {
-        "code": "test",
-        "name": "Test",
-        "seats": 1
-    },
-    {
         "code": "lina-sami",
         "name": "Lina & Sami",
         "seats": 2
     },
     {
-        "code": "famille-dupont",
-        "name": "Famille Dupont",
-        "seats": 4
-    },
-    {
-        "code": "julie-martin",
-        "name": "Julie Martin",
+        "code": "dj",
+        "name": "Maman",
         "seats": 1
     },
     {
-        "code": "pierre-leroy",
-        "name": "Pierre Leroy",
+        "code": "k-b",
+        "name": "Maman & Papa",
+        "seats": 2
+    },
+    {
+        "code": "mehdi",
+        "name": "Mehdi",
         "seats": 1
     },
     {
-        "code": "les-bernard",
-        "name": "Claire & Thomas Bernard",
-        "seats": 3
+        "code": "bay",
+        "name": "Baya",
+        "seats": 1
+    },
+    {
+        "code": "ninouche",
+        "name": "Ninouche",
+        "seats": 1
+    },
+    {
+        "code": "nadia",
+        "name": "Nadia",
+        "seats": 1
+    },
+    {
+        "code": "jug-elias",
+        "name": "Jug & Elias",
+        "seats": 2
+    },
+    {
+        "code": "ryad",
+        "name": "Ryad",
+        "seats": 1
+    },
+    {
+        "code": "soufa",
+        "name": "Soufa & sa femme",
+        "seats": 2
+    },
+    {
+        "code": "kamel",
+        "name": "Kamel & sa femme",
+        "seats": 2
+    },
+    {
+        "code": "rayan",
+        "name": "Rayan",
+        "seats": 1
+    },
+    {
+        "code": "lydia-sami",
+        "name": "Lydia & Sami",
+        "seats": 2
+    },
+    {
+        "code": "dounia",
+        "name": "Dounia",
+        "seats": 1
+    },
+    {
+        "code": "mounira",
+        "name": "Mounira",
+        "seats": 1
+    },
+    {
+        "code": "amira",
+        "name": "Amira",
+        "seats": 1
+    },
+    {
+        "code": "delphine",
+        "name": "Delphine",
+        "seats": 1
     }
 ]
