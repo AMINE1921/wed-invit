@@ -64,7 +64,7 @@ export default function InvitationPage() {
               </h2>
               <div className="details-section__grid">
                 <div className="detail-card">
-                  <span className="detail-card__icon">💒</span>
+                  <span className="detail-card__icon">🏛️</span>
                   <h3>Cérémonie</h3>
                   <p>11h</p>
                   <p className="detail-card__venue">Hôtel de ville de Reims</p>
